@@ -1,0 +1,43 @@
+{
+  "name": "digitalpacobookstores",
+  "version": "0.0.1-alpha",
+  "description": "Creación de librería de javascript y css ",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "dev": "nodemon src/index.js --ext js --exec babel-node",
+    "build": "babel src --ignore src/**/__tests__/ -d dist",
+    "start": "node dist/index.js",
+    "test": "standard --fix && jest"
+  },
+  "standard": {
+    "globals": [
+      "fetch",
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elboqueronpaco/digitalpacoBookstores.git"
+  },
+  "author": "Francisco Javier Moreno García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elboqueronpaco/digitalpacoBookstores/issues"
+  },
+  "homepage": "https://github.com/elboqueronpaco/digitalpacoBookstores#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
