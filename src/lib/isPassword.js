@@ -1,1 +1,1 @@
-export default (password, min) => password && password.length >= min
+export default (password, min = 8) => password && password.length >= min

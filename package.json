@@ -1,7 +1,7 @@
 {
   "name": "digitalpacobookstores",
-  "version": "0.0.1",
-  "description": "Creación de librería de javascript y css ",
+  "version": "0.0.2",
+  "description": "Creación de librería de javascript y css -correcion",
   "main": "dist/index.js",
   "scripts": {
     "lint": "standard --fix",
